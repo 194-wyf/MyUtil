@@ -66,4 +66,22 @@ public class StringUtil {
 	//TODO 实现代码
 	}
 	
+	
+	//判断是否是数字
+	public static boolean isNumber(String src) {
+		String reg="^(-)?[0-9]+(\\.[0-9]+)$";
+		return src.matches(reg);
+	}
+	
+	//判断是否是手机号
+	public static boolean isPhone(String phone) {
+		String reg="^1[3|5|8|7]\\d{9}$";
+		return phone.matches(reg);
+	}
+	
+	//判断是否是邮箱
+	public static boolean isEmail(String email) {
+		String reg="\\w+\\@\\w+\\.\\w+";
+		return email.matches(reg);
+	}
 }

@@ -31,5 +31,38 @@ public class StringUtilTest {
 			System.out.println(name);
 		}
 	}
-
+	
+	@Test
+	public void testIsNumber() {
+		String str="324a";
+		boolean b = StringUtil.isNumber(str);
+		if (b) {
+			System.out.println("是");
+		}else {
+			System.out.println("否");
+		}
+		
+	}
+	@Test
+	public void testIsPhone() {
+		String str="13818";
+		boolean b = StringUtil.isPhone(str);
+		if (b) {
+			System.out.println("是");
+		}else {
+			System.out.println("否");
+		}
+		
+	}
+	@Test
+	public void testIsEmail() {
+		String str="";
+		boolean b = StringUtil.isEmail(str);
+		if (b) {
+			System.out.println("是");
+		}else {
+			System.out.println("否");
+		}
+		
+	}
 }
